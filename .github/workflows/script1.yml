@@ -1,0 +1,8 @@
+name: Practice Project
+on: [lint,test,build]
+jobs: 
+    test1:
+        runs-on: ubuntu-latest
+        steps:
+            - name:  Lint,Test and Deploy the Project
+              run: echo " lint, test ,build completed.."
