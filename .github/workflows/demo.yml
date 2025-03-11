@@ -19,7 +19,7 @@ jobs:
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             deps-node-modules-
-
+            deps-
       - name: Install dependencies
         run: npm ci
 
@@ -45,6 +45,7 @@ jobs:
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             deps-node-modules-
+            deps-
 
       - name: Install dependencies
         run: npm ci
